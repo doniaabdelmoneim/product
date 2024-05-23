@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>CRUD SYSTEM</title>
+</head>
+<body>
+    <div class="container " >
+        <div class="product">
+                <h1 class="text-center  ">Product Management System</h1>
+                <div class="inputs">
+            <input type="text" id="name" placeholder="product Name" class="form-control">
+            <div class="price d-flex align-items-center justify-content-center ">
+                <input type="number" onkeyup="getTotal()" id="price" placeholder="Price" class="form-control">
+                <input type="number" onkeyup="getTotal()" id="taxes" placeholder="Taxes" class="form-control">
+                <input type="number" onkeyup="getTotal()" id="ads" placeholder="Ads" class="form-control">
+                <input type="number" onkeyup="getTotal()" id="discount" placeholder="Discount" class="form-control">
+                <small id="total">111111</small>
+            </div>
+            <input type="text" id="category" placeholder="Category" class="form-control">
+            <input type="number" id="count" placeholder="Count" class="form-control">
+            <button class="btn btn-outline-danger  m-auto d-block w-50 mt-4" id="submit">Add Product </button>
+
+                </div>
+        </div>
+            <div class="search mt-5">
+                <input type="text" id="search" onkeyup="searchData(this.value)" placeholder="Search" class="form-control">
+                <div class="btnSearch d-flex justify-content-between ">
+                    <button onclick="getSearchMood(this.id)" id="searchName" class="btn btn-outline-danger">Search By Name</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory" class="btn btn-outline-danger">Search By Category</button>
+                </div>
+            </div>
+            <div class="tbody">
+                <table class="table my-3 text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tbody">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td><button class="btn btn-outline-success">Update</button></td>
+                            <td><button class="btn btn-outline-danger">Delete</button></td>  -->
+                    </tbody>
+                </table>
+    
+
+            </div>
+
+    </div>
+
+
+
+    
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

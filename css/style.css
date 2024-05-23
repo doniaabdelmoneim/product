@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    font-family: "Reddit Sans", sans-serif;
+    background-color: whitesmoke;
+
+}
+h1{
+    font-family: "Quicksand", sans-serif;
+    padding-block: 20px;
+    color: #dc3545;
+}
+input{
+    margin: 10px 0px;
+    padding: 4 px;
+}
+input#ads,input#taxes,input#discount{
+    margin: 0px 3px;
+}
+input:focus{
+    transform: scale(1.05);
+}
+#total{
+    background-color: #dc3545;
+    padding: 5px ;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total:';
+}
+.btnSearch button{
+    width: 500px;
+    margin-top: 10px;
+}
